@@ -4,6 +4,7 @@ layout: layouts/page.njk
 permalink: /questions/css-questions/index.html
 ---
 <details><summary><b>What is CSS selector specificity and how does it work?</b></summary>
+
 CSS selector specificity is a concept that determines the priority or weight of a selector in relation to other selectors when applying styles to HTML elements.
 
 Inline styles have the highest specificity, followed by ID selectors, class selectors, attribute selectors, pseudo-classes, element selectors, and pseudo-elements. 
