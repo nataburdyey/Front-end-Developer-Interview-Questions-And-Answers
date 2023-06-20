@@ -3,6 +3,7 @@ const CleanCSS = require('clean-css')
 const UglifyJS = require('uglify-es')
 const htmlmin = require('html-minifier')
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
+const { arrayReplaceAt } = require('markdown-it/lib/common/utils')
 const markdown = require('markdown-it')({
   html: true,
   breaks: true,
