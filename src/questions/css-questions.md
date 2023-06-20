@@ -3,8 +3,18 @@ title: CSS Questions
 layout: layouts/page.njk
 permalink: /questions/css-questions/index.html
 ---
+<details><summary><b>What is CSS selector specificity and how does it work?</b></summary>
+CSS selector specificity is a concept that determines the priority or weight of a selector in relation to other selectors when applying styles to HTML elements.
 
-* What is CSS selector specificity and how does it work?
+Inline styles have the highest specificity, followed by ID selectors, class selectors, attribute selectors, pseudo-classes, element selectors, and pseudo-elements. 
+
+The only way to override inline styles is by using `!important`.
+
+When multiple rules target the same element, the rule with the higher specificity takes precedence. If two or more rules have the same specificity, the rule that appears later in the CSS file or style block will override the previous rule.
+
+Understanding selector specificity helps in writing more specific and targeted CSS rules, avoiding conflicts, and achieving the desired styling effects.
+</details>
+
 * What's the difference between "resetting" and "normalizing" CSS? Which would you choose, and why?
 * Describe Floats and how they work.
 * Describe z-index and how stacking context is formed.
@@ -12,7 +22,7 @@ permalink: /questions/css-questions/index.html
 * What are the various clearing techniques and which is appropriate for what context?
 * How would you approach fixing browser-specific styling issues?
 * How do you serve your pages for feature-constrained browsers?
-  * What techniques/processes do you use?
+* What techniques/processes do you use?
 * What are the different ways to visually hide content (and make it available only for screen readers)?
 * Have you ever used a grid system, and if so, what do you prefer?
 * Have you used or implemented media queries or mobile specific layouts/CSS?
